@@ -72,7 +72,7 @@ li.submenu{
 }
 .destaque1 a{
     color: black;
-    background-color: yellow;
+    background-color: pink;
     background-size: 20px 20px;
     text-decoration: none;
     display: block;
@@ -107,8 +107,8 @@ li.submenu{
     text-shadow: 3px 3px 0px 0px yellowgreen;
 }
 .rodape{
-    background-color: lightgray;
-    color: black;
+    background-color: black;
+    color: pink;
     padding-top: 25px;
     padding-bottom: 25px;
 }

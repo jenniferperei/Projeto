@@ -108,6 +108,7 @@ li.submenu{
 }
 .rodape{
     background-color: black;
+    background-position: fixed;
     color: pink;
     padding-top: 25px;
     padding-bottom: 25px;

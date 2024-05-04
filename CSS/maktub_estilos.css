@@ -1,13 +1,14 @@
 body{
     font-family:'Times New Roman', Times, serif;
     text-align: center;
+    margin: 0%;
 }
 .cabecalho{
     column-count: 2;
     background-color: black;   
 }
 .logo img{
-    height: 80px;
+    height: 200px;
     width: auto;
     display: block;
     margin-left: 30px;
@@ -33,7 +34,7 @@ li a, .titulo-smenu{
 }
 li a:hover, .sunmenu:hover .titulo-smenu{
     background-color: pink;
-    color: white;
+    color: black;
 }
 li.submenu{
     display: inline-block;
@@ -54,7 +55,7 @@ li.submenu{
 }
 .lista-itens a:hover{
     background-color: pink;
-    color: white;
+    color: black;
 }
 .submenu:hover .lista-itens{
     display: block;
@@ -109,10 +110,10 @@ li.submenu{
 }
 
 
-.coluna-1 a:hover{
+/* .coluna-1 a:hover{
     background-color: yellow;
     color: navy;
-}
+} */
 .imagem-descr img{
     display: block;
     max-width: 300px;
@@ -131,14 +132,15 @@ li.submenu{
 }
 .btn{
     padding: 10px 10px;
-    width: 20px;
     color: black;
     background: pink;
-    border: 1px solid #555;
-    border-radius: 5px;
+    border: 20px;
+    border-radius: 10px;
     text-align: center;
     user-select: none;
     cursor: pointer;
+    margin-top: 10px;
+    margin-inline: 150px;
 }
 .btn a{ 
     color: black;
@@ -173,5 +175,11 @@ li.submenu{
 .img_cetim img{
     height: 300px;
     width: 300px;
-
+}
+.criadora{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
 }

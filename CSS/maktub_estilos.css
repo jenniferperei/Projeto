@@ -60,44 +60,55 @@ li.submenu{
     display: block;
 }
 .destaque1{
-    background-image: url(../imgs/tocadecetim_paisagem.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top;
-    padding-top: 300px;
-    color: black;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 20px;
+    max-width: 100%;
+    padding: 10px;
+    margin: auto;
+    background-color: black;
+    padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
-.btn{
-    padding: 10px 10px;
-    width: 50px;
-    color: black;
-    background: pink;
-    border: 1px solid #555;
-    border-radius: 5px;
-    text-align: center;
-    user-select: none;
-    cursor: pointer;
+
+.intro h1{
+    color: pink;
+    text-align: left;
+    margin: auto;
+    margin-left: 20px;
+    font-size: 30px;
 }
-.btn a{ 
-    color: black;
-    text-decoration: none;
+.intro p{
+    color: white;
+    text-align: left;
+    margin: auto;
+    font-size: 20px;
+    margin-left: 20px;  
+    line-height: 0.7cm;  
+
+}
+.lateral > div{
+    flex-direction: 1 0 200px;
+    margin: 0px 20px;
+}
+.lateral h1{
+    color: pink;
+    text-align: right;
+    margin: auto;
+    margin-right: 30px;
+    font-size: 15px;
+}
+.lateral img{
     display: block;
+    max-width: 300px;
+    max-height: 130px;
+    margin: auto;
+    border: inset;
+    border-color: pink;
 }
-.btn:hover{
-    background: palevioletred;
-    transition: background 1s;
-}
-.destaque1 > div {
-    width: 500px;
-    margin: 0 auto;
-}
-.destaque1 h1{
-    background-color: pink;
-    background-size: 100px 100px;
-}
+
+
 .coluna-1 a:hover{
     background-color: yellow;
     color: navy;
@@ -117,6 +128,26 @@ li.submenu{
 .produtos2 > div{
     flex: 1 1 250px;
     margin: 10px;
+}
+.btn{
+    padding: 10px 10px;
+    width: 20px;
+    color: black;
+    background: pink;
+    border: 1px solid #555;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+.btn a{ 
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.btn:hover{
+    background: palevioletred;
+    transition: background 1s;
 }
 .destaque2{
     background-image: url(../imgs/tocadecetim_paisagem.jpeg);

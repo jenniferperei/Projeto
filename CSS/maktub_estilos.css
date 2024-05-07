@@ -171,9 +171,45 @@ li.submenu{
     color: pink;
     padding-top: 25px;
     padding-bottom: 25px;
+    
+}
+.banner_Cetim {
+    width: 100%;
+    min-height: 475px;
+}
+
+.img_cetim {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container_produto {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.produ{
+    display: flex;
+    flex-direction: row;
+}
+.prod_desc{
+    width: 300px;
 }
 .img_cetim img{
+    border: 1px solid black;
+    border-radius: 10px;
     height: 300px;
+    width: 300px;
+}
+.img_item{
     width: 300px;
 }
 .criadora{

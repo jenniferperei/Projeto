@@ -209,6 +209,23 @@ li.submenu{
     height: 300px;
     width: 300px;
 }
+.banner_amarra {
+    width: 100%;
+    min-height: 475px;
+}
+.img_amarra {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.img_amarra img{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
+
 .img_item{
     width: 300px;
 }
@@ -218,4 +235,8 @@ li.submenu{
     gap: 20px;
     max-width: 800px;
     margin: auto;
+}
+.criadora img{
+    height: 500px;
+    border-radius: 5px;
 }

@@ -219,3 +219,14 @@ li.submenu{
     max-width: 800px;
     margin: auto;
 }
+
+a {
+    color: #3b4241; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+
+a:hover {
+    color: #2d5249; 
+}

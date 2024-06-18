@@ -8,7 +8,7 @@ body{
     background-color: black;   
 }
 .logo img{
-    height: 200px;
+    height: 100px;
     width: auto;
     display: block;
     margin-left: 30px;
@@ -209,6 +209,23 @@ li.submenu{
     height: 300px;
     width: 300px;
 }
+.banner_amarra {
+    width: 100%;
+    min-height: 475px;
+}
+.img_amarra {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.img_amarra img{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
+
 .img_item{
     width: 300px;
 }

@@ -1,7 +1,7 @@
 body{
     font-family:'Times New Roman', Times, serif;
     text-align: center;
-    margin: 0%;
+    margin: 0;
 }
 .cabecalho{
     column-count: 2;
@@ -246,4 +246,10 @@ a {
 
 a:hover {
     color: #2d5249; 
+}
+.imagem-home{
+border: 1px solid black;
+    border-radius: 10px;
+    width: 130px;
+    height: 300px;
 }

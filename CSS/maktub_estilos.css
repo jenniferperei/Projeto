@@ -2,12 +2,14 @@ body{
     font-family:'Times New Roman', Times, serif;
     text-align: center;
     margin: 0;
+    margin: 0;
 }
 .cabecalho{
     column-count: 2;
     background-color: black;   
 }
 .logo img{
+    height: 100px;
     height: 100px;
     width: auto;
     display: block;
@@ -35,6 +37,7 @@ li a, .titulo-smenu{
 li a:hover, .sunmenu:hover .titulo-smenu{
     background-color: pink;
     color: black;
+    color: black;
 }
 li.submenu{
     display: inline-block;
@@ -56,11 +59,21 @@ li.submenu{
 .lista-itens a:hover{
     background-color: pink;
     color: black;
+    background-color: pink;
+    color: black;
 }
 .submenu:hover .lista-itens{
     display: block;
 }
 .destaque1{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 20px;
+    max-width: 100%;
+    padding: 10px;
+    margin: auto;
+    background-color: black;
+    padding-top: 30px;
     display: grid;
     grid-template-columns: 1fr 200px;
     gap: 20px;
@@ -101,13 +114,50 @@ li.submenu{
     font-size: 15px;
 }
 .lateral img{
+
+.intro h1{
+    color: pink;
+    text-align: left;
+    margin: auto;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.intro p{
+    color: white;
+    text-align: left;
+    margin: auto;
+    font-size: 20px;
+    margin-left: 20px;  
+    line-height: 0.7cm;  
+
+}
+.lateral > div{
+    flex-direction: 1 0 200px;
+    margin: 0px 20px;
+}
+.lateral h1{
+    color: pink;
+    text-align: right;
+    margin: auto;
+    margin-right: 30px;
+    font-size: 15px;
+}
+.lateral img{
     display: block;
     max-width: 300px;
     max-height: 130px;
     margin: auto;
     border: inset;
     border-color: pink;
+    max-width: 300px;
+    max-height: 130px;
+    margin: auto;
+    border: inset;
+    border-color: pink;
 }
+
+
+/* .coluna-1 a:hover{
 
 
 /* .coluna-1 a:hover{
@@ -173,6 +223,7 @@ li.submenu{
 .rodape{
     background-color: black;
     background-position: fixed;
+    background-position: fixed;
     color: pink;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -207,8 +258,57 @@ li.submenu{
 }
 .prod_desc{
     width: 300px;
+    
+}
+.banner_Cetim {
+    width: 100%;
+    min-height: 475px;
+}
+
+.img_cetim {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container_produto {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.produ{
+    display: flex;
+    flex-direction: row;
+}
+.prod_desc{
+    width: 300px;
 }
 .img_cetim img{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
+.banner_amarra {
+    width: 100%;
+    min-height: 475px;
+}
+.img_amarra {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.img_amarra img{
+    border: 1px solid black;
+    border-radius: 10px;
     border: 1px solid black;
     border-radius: 10px;
     height: 300px;

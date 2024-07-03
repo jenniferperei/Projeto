@@ -1,13 +1,14 @@
 body{
     font-family:'Times New Roman', Times, serif;
     text-align: center;
+    margin: 0;
 }
 .cabecalho{
     column-count: 2;
     background-color: black;   
 }
 .logo img{
-    height: 80px;
+    height: 100px;
     width: auto;
     display: block;
     margin-left: 30px;
@@ -33,7 +34,7 @@ li a, .titulo-smenu{
 }
 li a:hover, .sunmenu:hover .titulo-smenu{
     background-color: pink;
-    color: white;
+    color: black;
 }
 li.submenu{
     display: inline-block;
@@ -53,44 +54,107 @@ li.submenu{
     text-align: left;
 }
 .lista-itens a:hover{
-    background-color: navy;
-    color: white;
+    background-color: pink;
+    color: black;
 }
 .submenu:hover .lista-itens{
     display: block;
 }
 .destaque1{
-    background-image: url(../imgs/tocadecetim_paisagem.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top;
-    padding-top: 300px;
-    color: white;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 20px;
+    max-width: 100%;
+    padding: 10px;
+    margin: auto;
+    background-color: black;
+    padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
-.destaque1 a{
+
+.intro h1{
+    color: pink;
+    text-align: left;
+    margin: auto;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.intro p{
+    color: white;
+    text-align: left;
+    margin: auto;
+    font-size: 20px;
+    margin-left: 20px;  
+    line-height: 0.7cm;  
+
+}
+.lateral > div{
+    flex-direction: 1 0 200px;
+    margin: 0px 20px;
+}
+.lateral h1{
+    color: pink;
+    text-align: right;
+    margin: auto;
+    margin-right: 30px;
+    font-size: 15px;
+}
+.lateral img{
+    display: block;
+    max-width: 300px;
+    max-height: 130px;
+    margin: auto;
+    border: inset;
+    border-color: pink;
+}
+
+
+/* .coluna-1 a:hover{
+    background-color: yellow;
+    color: navy;
+} */
+
+.coluna-1{
+    margin-top: 15px;
+}
+
+.imagem-descr img{
+    display: block;
+    max-width: 300px;
+    max-height: 130px;
+    margin: auto;
+}
+.produtos2{
+    display: flex;
+    max-width: 100%;
+    
+}
+.produtos2 > div{
+    flex: 1 1 250px;
+    margin: 10px;
+}
+.btn{
+    padding: 10px 10px;
     color: black;
-    background-color: pink;
-    background-size: 20px 20px;
+    background: pink;
+    border: 20px;
+    border-radius: 10px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-inline: 150px;
+}
+.btn a{ 
+    margin: 10px;
+    color: black;
     text-decoration: none;
     display: block;
 }
-.coluna-1 a:hover{
-    background-color: yellow;
-    color: navy;
-}
-.coluna-3{
-    column-count: 3;
-}
-.imagem-descr img{
-    width: 50;
-    height: auto;
-    max-height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.btn:hover,.btn2:hover{
+    background: palevioletred;
+    transition: background 1s;
 }
 .destaque2{
     background-image: url(../imgs/tocadecetim_paisagem.jpeg);
@@ -108,12 +172,120 @@ li.submenu{
 }
 .rodape{
     background-color: black;
+    background-position: fixed;
     color: pink;
     padding-top: 25px;
     padding-bottom: 25px;
+    
+}
+.banner_Cetim {
+    width: 100%;
+    min-height: 475px;
+}
+
+.img_cetim {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container_produto {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.produ{
+    display: flex;
+    flex-direction: row;
+}
+.prod_desc{
+    width: 300px;
 }
 .img_cetim img{
+    border: 1px solid black;
+    border-radius: 10px;
     height: 300px;
     width: 300px;
-
 }
+.banner_amarra {
+    width: 100%;
+    min-height: 475px;
+}
+.img_amarra {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.img_amarra img{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+.img_item{
+    width: 300px;
+}
+.criadora{
+    display: block;
+    max-width: 800px;
+    margin: auto;
+}
+
+a {
+    color: #3b4241; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+
+a:hover {
+    color: #2d5249; 
+}
+.imagem-home{
+border: 1px solid black;
+    border-radius: 10px;
+    width: 130px;
+    height: 300px;
+}
+.prod_desc {
+    text-align: center; /* Centraliza o texto e os botões */
+    margin-top: 20px; /* Espaçamento superior para a descrição do produto */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+
+
+.btn,.btn2{
+    text-decoration: none;
+    color: white;
+    background-color: #ffadd6; /* Cor de fundo rosa */
+    border-radius: 15px;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+}
+.btn:hover,.btn2:hover {
+    background-color: #ff69b4; /* Cor de fundo rosa específica para o botão "Comprar" */
+}
+
+
+.btn2{
+   
+    width: 100%;
+}
+
